@@ -1,0 +1,93 @@
+//
+// Horizontal Menu
+// ==================================================
+
+
+
+
+/*
+  <div class="b-menu-horiz b-menu-horiz_modofier-name_modifier-value">
+    <h3 class="b-menu-horiz__title">Navigation:</h3>
+    <ul class="b-menu-horiz__layout">
+      <li class="b-menu-horiz__layout-unit b-menu-horiz__layout-unit_position_first">
+        <div class="b-menu-horiz__item b-menu-horiz__item_state_current">
+          <a class="b-link b-menu-horiz__item-selector" href="/">
+            <span class="b-link__inner">One</span>
+          </a>
+        </div>
+      </li>
+      <li class="b-menu-horiz__layout-unit">
+        <div class="b-menu-horiz__item">
+          <a class="b-link b-menu-horiz__item-selector" href="/">
+            <span class="b-link__inner">Two</span>
+          </a>
+        </div>
+      </li>
+      <li class="b-menu-horiz__layout-unit b-menu-horiz__layout-unit_position_last">
+        <div class="b-menu-horiz__item">
+          <a class="b-link b-menu-horiz__item-selector" href="/">
+            <span class="b-link__inner">Three</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+*/
+
+
+
+
+.b-menu-horiz
+
+  .b-link
+    display: block
+
+
+.b-menu-horiz__item,
+.b-menu-horiz__layout,
+.b-menu-horiz__layout-unit
+  height: 100%
+
+
+.b-menu-horiz__layout,
+.b-menu-horiz__layout-unit
+  margin: 0
+  padding: 0
+
+  list-style: none
+
+
+.b-menu-horiz__title,
+.b-menu-horiz__layout,
+.b-menu-horiz__layout-unit
+  display: inline-block
+
+
+.b-menu-horiz__layout
+  font-size: 100%
+
+
+.b-menu-horiz__item
+  padding: 5px 8px
+
+  text-align: center
+
+
+.b-menu-horiz__item_state_current
+  font-weight: 700
+
+
+.b-menu-horiz__title
+  margin-right: 10px
+
+
+.b-menu-horiz__item_state_disabled
+.b-menu-horiz__item_state_disabled a.b-menu-horiz__item-selector,
+.b-menu-horiz__item_state_disabled a.b-menu-horiz__item-selector:hover
+  cursor: default
+
+
+.b-menu-horiz__item_state_disabled
+  cursor: default
+
+  color: grayLight !important

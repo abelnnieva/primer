@@ -1,0 +1,108 @@
+/*!
+ * Primer v0.1.0
+ *
+ * Copyright 2013 Abel Nieva
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @abnieva.
+ */
+
+
+
+
+//
+// Root
+// ==================================================
+
+
+// Core settings and mixins
+@import "__settings" // Modify this for custom colors, font-sizes, etc
+@import '../node_modules/nib/index' // Check out https://github.com/visionmedia/nib
+
+
+// CSS Reset
+@import "/lib/normalize-css/normalize.css" // Install Normalize as a Bower package: bower install normalize
+
+
+// Font faces
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700")
+@import url("http://fonts.googleapis.com/css?family=Inconsolata")
+
+
+// Grid system & page structure
+@import "blocks/b-page"
+
+
+
+
+//
+// Base (Mobile) Size
+// ==================================================
+
+
+// Styles in primer.base.styl
+@import "primer.base"
+
+
+
+
+//
+// Large Mobile Devices
+// ==================================================
+
+
+@media only screen and (min-width: 481px)
+
+  // Styles in primer.481up.styl
+  @import "primer.481up"
+
+// end of media query
+
+
+
+
+//
+// Tablet & Smaller Laptops
+// ==================================================
+
+
+@media only screen and (min-width: 768px)
+
+  // Import grid
+  @import "blocks/i-grid";
+
+  // Styles in primer.768up.styl
+  @import "primer.768up"
+
+// end of media query
+
+
+
+
+//
+// Desktop
+// ==================================================
+
+
+@media only screen and (min-width: 1030px)
+
+  // Styles in primer.1030up.styl
+  @import "primer.1030up"
+
+// end of media query
+
+
+
+
+//
+// Large Viewing Size
+// ==================================================
+
+
+@media only screen and (min-width: 1240px)
+
+  // styles in primer.1240up.styl
+  @import "primer.1240up";
+
+// end of media query
