@@ -1,0 +1,54 @@
+//
+// Grid
+// ==================================================
+
+
+
+
+/*
+  <div class="i-grid">
+    <div class="i-column_6 i-offset_3">
+      Page content
+    </div>
+  </div>
+*/
+
+
+
+
+// Columns
+// --------------------------------------------------
+
+
+getColumns(columns = gridColumns)
+  for column in 1..columns
+    .i-column_{column}
+      width: (100% / columns) * column
+
+
+[class^="i-column_"], [class*=" i-column_"]
+  float: left
+  margin-right: 2.762430939%
+  position: relative
+
+  &:last-child
+    margin-right: 0
+
+
+getColumns()
+
+
+
+
+// Offsets
+// --------------------------------------------------
+
+
+getOffsets(columns = gridColumns)
+  n = columns - 1
+  for column in 1..n
+    .i-offset_{column}
+      margin-left: (100% / columns) * column
+
+
+getOffsets()

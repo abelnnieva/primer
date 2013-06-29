@@ -1,0 +1,106 @@
+//
+// Vertical Menu
+// ==================================================
+
+
+
+
+/*
+  <div class="b-menu-vert">
+    <h3 class="b-menu-vert__title">Menu title</h3>
+    <ul class="b-menu-vert__layout">
+      <li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first">
+        <div class="b-menu-vert__item b-menu-vert__item_state_current">
+          <a class="b-link b-menu-vert__item-selector" href="/">
+            <span class="b-link__inner">First point</span>
+          </a>
+        </div>
+      </li>
+      <li class="b-menu-vert__layout-unit">
+        <div class="b-menu-vert__item">
+          <span class="b-link">
+            <span class="b-link__inner">Second point</span>
+          </span>
+        </div>
+        <div class="b-menu-vert__item-content">
+          <div class="b-menu-vert b-menu-vert_type_submenu">
+            ...
+          </div>
+        </div>
+      </li>
+      <li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last">
+        <div class="b-menu-vert__item">
+          <a class="b-link b-menu-vert__item-selector" href="/">
+            <span class="b-link__inner">Third point</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+*/
+
+
+
+
+.b-menu-vert
+
+  .b-link
+    display: block
+
+
+.b-menu-vert__item,
+.b-menu-vert__layout,
+.b-menu-vert__layout-unit
+  height: 100%
+
+
+.b-menu-vert__layout,
+.b-menu-vert__layout-unit
+  margin: 0
+  padding: 0
+
+  list-style: none
+
+
+.b-menu-vert__title,
+.b-menu-vert__layout,
+.b-menu-vert__layout-unit
+  display: block
+
+
+.b-menu-vert__layout
+  font-size: 100%
+
+
+.b-menu-vert__item
+  padding: 5px 8px
+
+  text-align: center
+
+
+.b-menu-vert__item_state_current
+  font-weight: 700
+
+
+.b-menu-vert__title
+  margin-bottom: 5px
+
+
+.b-menu-vert__item_state_disabled
+.b-menu-vert__item_state_disabled a.b-menu-vert__item-selector,
+.b-menu-vert__item_state_disabled a.b-menu-vert__item-selector:hover
+  cursor: default
+
+
+.b-menu-vert__item_state_disabled
+  cursor: default
+
+  color: grayLight !important
+
+
+.b-menu-vert__item-content
+  display: none
+
+
+.b-menu-vert__item-content_visibility_visible
+  display: block

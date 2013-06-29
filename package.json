@@ -1,0 +1,28 @@
+{
+  "name": "primer",
+  "version": "0.0.1",
+  "homepage": "http://github.com/abnieva/primer",
+  "description": "Stylus-based, responsive, BEM, and OOCSS front-end framework",
+  "main": "src/primer.styl",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/abnieva/primer.git"
+  },
+  "keywords": [
+    "oocss",
+    "bem",
+    "responsive"
+  ],
+  "author": {
+    "name": "Abel Nieva",
+    "twitter": "@abnieva"
+  },
+  "license": "Apache License, Version 2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "nib": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
