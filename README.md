@@ -6,6 +6,13 @@
 
   Primer is built on a [BEM](http://bem.info/)-style naming convention and based on [bem-bl blocks library](http://bem.github.io/bem-bl/index.en.html).
 
+## Installation
+
+```
+$ npm install
+$ bower install
+```
+
 ## Bugs and Feedback
 
   If you find a bug or have some feedback, please head over to the [issue-tracker](https://github.com/abnieva/primer/issues).
